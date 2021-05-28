@@ -10,7 +10,7 @@ export default class Box {
   init() {
     this.geometry = new THREE.PlaneGeometry(50.0,50.0)
     this.material = new THREE.MeshStandardMaterial({
-      color: 0xfdf8d8,
+      color: 0xffffff,
       side: THREE.DoubleSide,
     })
     this.mesh = new THREE.Mesh(this.geometry, this.material)

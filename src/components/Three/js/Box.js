@@ -15,7 +15,7 @@ export default class Box {
   init() {
     this.geometry = new THREE.BoxGeometry(0.1,0.1,0.1)
     this.material = new THREE.MeshLambertMaterial({
-      color: 0xffffff,
+      color: 0xe7e7eb, // rgb(231, 231, 235)
       // wireframe: true
     })
     for(let i=0; i<5; i++) {

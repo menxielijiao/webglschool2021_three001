@@ -16,19 +16,21 @@ export default {
         $canvas: this.$refs.canvas
       })
     }
-    window.addEventListener('keydown',this.changeBallPos)
-    window.addEventListener('keyup',this.changeBoxPos)
+    window.addEventListener('mousedown',this.changeBallPos)
+    window.addEventListener('touchstart',this.changeBallPos)
+    window.addEventListener('mouseup',this.changeBoxPos)
+    window.addEventListener('touchend',this.changeBoxPos)
   },
   methods: {
-    changeBallPos(event) {
-      if(event.key === ' ') {
+    changeBallPos() {
+      // if(event.key === ' ') {
         this.MyGL.keydownEvent()
-      }
+      // }
     },
-    changeBoxPos(event) {
-      if(event.key === ' ') {
+    changeBoxPos() {
+      // if(event.key === ' ') {
         this.MyGL.keyUpEvent()
-      }
+      // }
     }
   }
 

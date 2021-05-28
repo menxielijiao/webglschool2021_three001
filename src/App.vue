@@ -37,5 +37,7 @@ export default {
   * {
     margin: 0 !important;
     padding: 0 !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
   }
 </style>
